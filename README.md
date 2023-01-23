@@ -1,11 +1,11 @@
 # lit-nanostores
 
-> Integrates nanostores with Lit
+> Integrates [nanostores](https://github.com/nanostores/nanostores) with [Lit](https://lit.dev)
 
 ### Features
 
 &nbsp; &nbsp; ✓ Hooks into Lit property system<br>
-&nbsp; &nbsp; ✓ Easy to implement unit tests. Same as components without nanostores<br>
+&nbsp; &nbsp; ✓ Easy to implement unit tests. Same as components without app state<br>
 
 ### Install
 
@@ -53,7 +53,7 @@ class MyComponent extends LitElement {}
 ### Remarks
 
 - Keeps the basic structure of how Lit component is written: declare a property and use it in render.
-  - Its easy to create unit tests or demo (like storybook): just set the property / attribute as any other component
+  - Its easy to create unit tests or demo (like storybook): just set the property / attribute as any other component. See testing example [here](demo/message-banner.test.js)
   - Its easy to add (or remove) integration with app state (nanostores)
 - Not sure how can make the property declaration work with typescript. I saw this pattern in other projects but not investigated further
 
